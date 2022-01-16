@@ -1,0 +1,25 @@
+{
+  "name": "my-action",
+  "version": "1.0.0",
+  "description": "Creating action for myself, for my workflows or just a test.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minlaxz/my-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minlaxz/my-action/issues"
+  },
+  "homepage": "https://github.com/minlaxz/my-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0"
+  }
+}
