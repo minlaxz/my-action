@@ -1,5 +1,3 @@
-// import core from '@actions/core';
-// import github from '@actions/github';
 const core = require('@actions/core');
 const github = require('@actions/github');
 
@@ -17,8 +15,8 @@ const main = async () => {
     /**
      * Now we need to create an instance of Octokit which will use to call
      * GitHub's REST API endpoints.
-     * We will pass the token as an argument to the constructor. This token
-     * will be used to authenticate our requests.
+     * We will pass token as an argument to the constructor. This token will
+     * be used to authenticate our requests.
      * You can find all the information about how to use Octokit here:
      * https://octokit.github.io/rest.js/v18
      **/
@@ -39,7 +37,7 @@ const main = async () => {
 
 
     /**
-     * Contains the sum of all the additions, deletions, and changes
+     * Contains the sum of all the additions, deletions and changes
      * in all the files in the Pull Request.
      **/
     let diffData = {
@@ -66,7 +64,7 @@ const main = async () => {
        * Add labels according to file types.
        */
       const fileExtension = file.filename.split('.').pop();
-      switch (fileExtension) {
+      switch(fileExtension) {
         case 'md':
           await octokit.rest.issues.addLabels({
             owner,

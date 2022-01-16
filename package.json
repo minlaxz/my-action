@@ -4,14 +4,16 @@
   "description": "Creating action for myself, for my workflows or just a test.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/minlaxz/my-action.git"
   },
-  "keywords": ["action", "github-actions"],
+  "keywords": [
+    "action",
+    "github-actions"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -20,6 +22,7 @@
   "homepage": "https://github.com/minlaxz/my-action#readme",
   "dependencies": {
     "@actions/core": "^1.6.0",
-    "@actions/github": "^5.0.0"
+    "@actions/github": "^5.0.0",
+    "@vercel/ncc": "^0.33.1"
   }
 }
