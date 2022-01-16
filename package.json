@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/minlaxz/my-action.git"
   },
-  "keywords": [],
+  "keywords": ["action", "github-actions"],
   "author": "",
   "license": "ISC",
   "bugs": {
